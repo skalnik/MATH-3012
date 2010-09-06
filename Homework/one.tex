@@ -6,13 +6,14 @@
 \author{Mike Skalnik}
 
 \providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+\newcommand{\s}[1]{\setcounter{enumi}{#1}}
 
 \begin{document}
 
 \begin{flushright}{\large Homework 1\\ Mike Skalnik}\end{flushright}
 
 \begin{enumerate}
-  \setcounter{enumi}{1}
+  \s{1}
   
   \item
     For each digit position, there are 5 possible digits. Since there are 2n total digit positions, we can determine that there are a total of $5^{2n}$ possible positive integers.
@@ -24,8 +25,8 @@
       \item The total number of stings of length 10 made from the alphabet of all uppercase \& lowercase English letters, decimal digits, and 10 symbols is
         $\left( 26 + 26 + 10 + 10 \right)^{10} = 3.7439\e{18}$
     \end{enumerate}
-  
-  \setcounter{enumi}{5}
+ 
+  \s{5}
   
   \item
     \begin{enumerate}
@@ -33,8 +34,8 @@
       \item For the 3 positions, it must be a student from group 1, 2, and then 3. The following 3 are the same, however there is now one less student to pick from in each group, so there are only 9 to choose from for those positions. The next 3 are the same way, but only with 8. This continues until the line is complete, so we can determine that there are a total of $10!^3 = 4.7785\e{19}$ 
     \end{enumerate}
   
-  \setcounter{enumi}{10}
-  
+  \s{10}
+
   \item 
     \begin{enumerate}
       \item For every donut he purcahses, he can select any of the 12. This means that there are a total of $12^6 = 2985984$ possible ways of purchasing donuts.
@@ -48,7 +49,7 @@
       \item With the honorable mention certificates, there are a total of $P(20,4) \times C(16,4) = 211629600$ possible outcomes.
     \end{enumerate}
 
-  \setcounter{enumi}{14}
+  \s{14}
   
   \item
 \end{enumerate}
