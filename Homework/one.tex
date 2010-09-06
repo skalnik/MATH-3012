@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\title{Homework 1}
+\author{Mike Skalnik}
+
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+
+\begin{document}
+
+\begin{flushright}{\large Homework 1\\ Mike Skalnik}\end{flushright}
+
+\begin{enumerate}
+  \setcounter{enumi}{1}
+  
+  \item
+    For each digit position, there are 5 possible digits. Since there are 2n total digit positions, we can determine that there are a total of $5^{2n}$ possible positive integers.
+  \item
+    \begin{enumerate}
+      \item Bob's password rules only allow for
+        $\left( 26 + 26 \right)^3 \times 10^2 \times 10 \times 26^2 \times 10 \times 10 = 9505100800000$
+        passwords
+      \item The total number of stings of length 10 made from the alphabet of all uppercase \& lowercase English letters, decimal digits, and 10 symbols is
+        $\left( 26 + 26 + 10 + 10 \right)^{10} = 3.7439\e{18}$
+    \end{enumerate}
+  
+  \setcounter{enumi}{5}
+  
+  \item
+    \begin{enumerate}
+      \item Any one student from the whole group can take the first position. In the second position there are 9 possible students to choose from, and 8 for the third position. This continues until the final position, so there are simply $10! = 3628800$ possible ways for the students to line up.
+      \item For the 3 positions, it must be a student from group 1, 2, and then 3. The following 3 are the same, however there is now one less student to pick from in each group, so there are only 9 to choose from for those positions. The next 3 are the same way, but only with 8. This continues until the line is complete, so we can determine that there are a total of $10!^3 = 4.7785\e{19}$ 
+    \end{enumerate}
+  
+  \setcounter{enumi}{10}
+  
+  \item 
+    \begin{enumerate}
+      \item For every donut he purcahses, he can select any of the 12. This means that there are a total of $12^6 = 2985984$ possible ways of purchasing donuts.
+      \item Since he wants to choose 6 distinct donuts out of 12 total, we can determine all possible ways to purchase donuts with a permutation. $P(12, 6) = 655280$
+      \item In this case, the order doesn't matter at all. So, using a combination, we can determine that the total number of ways to pick donuts is $\binom{12}{6} = 924$.
+    \end{enumerate}
+  \item Assuming there are no positions in korfball, the selection order doesn't matter. So there are a total of $\binom{7}{4} \times \binom{11}{4} = 11550$
+  \item
+    \begin{enumerate}
+      \item There are $P(20,4) = 116280$ possible outcomes for the competition
+      \item With the honorable mention certificates, there are a total of $P(20,4) \times C(16,4) = 211629600$ possible outcomes.
+    \end{enumerate}
+
+  \setcounter{enumi}{14}
+  
+  \item
+\end{enumerate}
+\end{document}
+
