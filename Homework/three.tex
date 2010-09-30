@@ -12,7 +12,76 @@
 
 \begin{flushright}{\large Homework 3\\ Mike Skalnik}\end{flushright}
 
+Section 4.6
+
 \begin{enumerate}
+  \s{1}
+
+  \item You will have to place, at most, $m n + 1$ pigeons into 1 hole.
+
+  \item No, this simply not possible. Any 2-element subset of X will also be included in the 3-element subsets of X. This is the same if X was a set of positive integers from 1 to 6.
+
+\end{enumerate}
+
+Section 5.8
+
+\begin{enumerate}
+
+  \item
+    \begin{enumerate}
+      \setcounter{enumii}{4}
+
+       \item 2
+
+       \item 3
+
+    \end{enumerate}
+
+  \s{2}
+
+  \item Such a graph cannot exist, since $\sum_{v \in V} \mathrm{deg}(v) > 2 |E|$.
+
+  \s{5}
+
+  \item For a tree with a single vertex, there are no edges. We then assume we have a tree with n-1 vertices that contains n-2 edges. We can construct a new tree with n vertices and n-1 edges by adding a leaf to that tree.
+
+  \item We can quickly determine that $G_4$ is not isomorphic with any other graph, since the degree of vertex $x_5$ is 5, which isn't seen in any other graph. $G_2$ is also not isomorphic with any other graph since both $G_3$ and $G_1$ have a triangle that cannot be replicated with $G_2$. This leaves $G_1$ and $G_3$ which are isomorphic, the isomorphism being:
+    \begin{eqnarray*}
+      f\left(v_1\right) &=& w_1 \\ 
+      f\left(v_2\right) &=& w_3 \\
+      f\left(v_3\right) &=& w_4 \\
+      f\left(v_4\right) &=& w_2 \\
+      f\left(v_5\right) &=& w_6 \\
+      f\left(v_6\right) &=& w_5
+    \end{eqnarray*}
+
+  \s{8}
+
+  \item The given graph is eulerian since every vertex has an even degree. The eulerian curcuit is:
+    \begin{eqnarray*}
+      C &=& \left(a\right) \\
+        & & \left(a, b, l, a\right) \\
+        & & \left(a, b, l, d, j, l, a\right) \\
+        & & \left(a, b, l, d, h, m, i, d, j, l, a\right) \\
+        & & \left(a, b, l, d, h, m, g, n, m, i, d, j, l, a\right) \\
+        & & \left(a, b, l, d, h, m, g, n, m, i, c, f, i, d, j, c, f, e, a, k\right)
+    \end{eqnarray*}
+
+  \s{12}
+  
+  \item The chromatic number is 3, and the graph coloring is: \\
+    \begin{tabular}{l c r}
+      a &:& 2 \\
+      b &:& 2 \\
+      c &:& 1 \\
+      d &:& 1 \\
+      e &:& 3 \\
+      f &:& 2 \\
+      g &:& 1 \\
+      h &:& 1 \\
+      i &:& 2 \\
+      j &:& 2
+    \end{tabular}
 \end{enumerate}
 \end{document}
 
