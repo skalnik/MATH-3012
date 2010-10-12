@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\title{Homework 4}
+\author{Mike Skalnik}
+
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+\newcommand{\s}[1]{\setcounter{enumi}{#1}}
+
+\begin{document}
+
+\begin{flushright}{\large Homework 4\\ Mike Skalnik}\end{flushright}
+
+\begin{enumerate}
+  \s{14}
+% TODO: Edge set runs off :(
+  \item If we number the chemicals 0-9, then we get a graph with vertex and edge sets  $$V = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}$$ $$E = {01, 03, 04, 06, 19, 13, 14, 25, 27, 28, 34, 48, 59, 56, 67}$$
+  The chromatic number is 4, which means we would need 4 rooms to safely store all 10 chemicals.
+
+
+  \s{20}
+
+  \item The cardinality of the independent set is $t \left( n_t -1 \right) +1$. Then $\binom{t\left(n_t -1 \right) +1}{n_t} n_t$ which leads us to $n_t = t\left(n_t-1\right) +1 + \binom{t\left(n_t-1\right)+1}{n_t} n_t$.
+
+  \s{22}
+
+  \item The girth is 5 since there is a cycle of 5 coming from $t=3$. The rest are independent sets.
+
+  \s{27}
+  
+  \item $\mathrm{\# of vertices} - \mathrm{\# of edges} + \mathrm{\# of faces} = 2$. $14-22+10=2$, so the graph is planar.
+  \item $12-18+14=8$, so the graph isn't planar.
+
+  \s{31}
+
+  \item Since every graph larger than $K_5$ is either homeomorphic to $K_5$ or non-planar, the most edges a vertex of a planar graph has is 5.
+
+  \item
+    \begin{enumerate}
+      \item c
+      \item a, e
+      \item a
+      \item b
+      \item d
+    \end{enumerate}
+
+  \s{37}
+  \item 158831
+
+  \s{39}
+  \item
+    \begin{tabular}{|l|c|r|}
+      \hline
+      Pr\"{u}fer Code & Label Set & Edge Added \\ \hline
+      96113473 & ${1, 2, 3, 4, 5, 6, 7, 8, 9}$ & 2-9\\
+      6113473 & ${1, 3, 4, 5, 6, 7, 8, 9}$ & 5-6\\
+      113473 & ${1, 3, 4, 6, 7, 8, 9}$ & 6-1\\
+      13473 & ${1, 3, 4, 7, 8, 9}$ & 8-1\\
+      3473 & ${1, 3, 4, 7, 9}$ & 1-3\\
+      473 & ${3, 4, 7, 9}$ & 9-4\\
+      73 & ${3, 4, 7}$ & 4-7\\
+      3 & ${3, 7}$ & 7-3\\
+      - & ${3}$ & -\\ \hline
+    \end{tabular}
+
+\end{enumerate}
+
+\end{document}
