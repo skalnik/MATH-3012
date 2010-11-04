@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\title{Homework 5}
+\author{Mike Skalnik}
+
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+\newcommand{\s}[1]{\setcounter{enumi}{#1}}
+
+\begin{document}
+
+\begin{flushright}{\large Homework 5\\ Mike Skalnik}\end{flushright}
+
+Section 6.9
+
+\begin{enumerate}
+  \s{2}
+  
+  \item The binary relation $P$ is not a partial order on the set $X$ since it isn't reflexive. If the relation ${5, 5}$ to $P$, it would then be a partial order on the set $X$.
+
+  \s{5}
+  
+  \item
+    \begin{enumerate}
+      \item $\{2\} \le \{3\} \le \{2, 5\} \le \{3, 7\} \le \{2, 3, 11\} \le \{2, 5, 25\} \le \{2, 3, 5, 7\}$
+      \item $2 \le 3 \le 10 \le 21 \le 66 \le 50 \le 210$
+
+      \item $\left(1, 2, 1\right) \le \left(3, 3, 2\right) \le \left(4, 1, 5\right) \le \left(2, 5, 4\right) \le \left(5, 7, 3\right) \le \left(6, 4, 5\right) \le \left(7, 6, 7\right)$
+    \end{enumerate}
+
+  \s{9}
+  
+  \item
+    \begin{enumerate}
+      \item Right Poset: \\
+        width $w = 7$\\
+        antichain $ = \{\left(7, 6, 7\right), \left(5, 7, 3\right), \left(6, 4, 5\right), \left(2, 5, 4\right), \left(3, 3, 2\right), \left(4, 1, 5\right), \left(1, 2, 1\right)\}$. \\
+        If each element is placed in a chain by itself, the poset is partitioned into 7 chains.
+      \item Center Poset: \\
+        width $w = 5$\\
+        antichain $ = \{10, 21, 66, 210, 50\}$\\
+        partition $\{50, 10, 210\}, \{210, 21, 3\}, \{3, 66, 2\}, \{2, 10, 50\}, \{2, 10, 210\}$
+    \end{enumerate}
+
+  \s{17}
+  
+  \item
+    width $w = 3$
+    $C_1 = \{f, d, j, k\}$\\
+    $C_2 = \{b, h, c, l, e, m, o\}$\\
+    $C_3 = \{g, n, a, i\}$\\
+    antichain $ = \{f, b, g\}$
+\end{enumerate}
+
+Section 7.6
+
+\begin{enumerate}
+  \s{4}
+  
+  \item $1000 - $ \#s divisible by 3 $ - $ \#s divisible by 8 $ - $ \#s divisible by 25 $ + $ \#s divisible by 3 \& 8 $ + $ \#s divisible by 8 \& 25 $ + $ \#s divisible by 3 \& 25 $ - $ \#s divisible by 3, 8, \& 25\\
+    $1000 - 333 - 125 - 40 + 41 + 5 + 13 - 1 = 560$
+
+  \item If we use $x_1, x_2, \dots + x_5$ to represent Fulton, Gwinett, DeKalb, Cobb, and Clayton counties, then we see that $x_1 + x_2 + x_3 + x_4 + x_5 = 173$, $x_1, x_2, x_3, x_4, x_5, \ge 1$, $x_5 \le 10$, \& $x_4 \le 30$. We then calculate the total number of solutions with $\binom{173}{4} - \binom{162}{4} - \binom{142}{4} + \binom{131}{4} = 3877170$
+  
+  \s{7}
+  
+  \item
+
+  \s{11}
+  
+  \item
+    \begin{enumerate}
+      \item $\sigma$ does not satisfy $P_2$ since $\sigma\left(2\right) = 1 \neq 2$. It does satisfy $P_2$ since $\sigma\left(6\right) = 6$. $P_4, P_6$ are the only properties satisfied by $\sigma$.
+      \item
+        \begin{tabular}{c|c|c|c|c|c|c|c|c}
+          $i$                   & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ \hline
+          $\tau\left(i\right)$  & 1 & 8 & 8 & 4 & 8 & 8 & 8 & 8 \\
+        \end{tabular}
+      \item
+        \begin{tabular}{c|c|c|c|c|c|c|c|c}
+          $i$                 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ \hline
+          $\pi\left(i\right)$ & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1 \\
+        \end{tabular}
+    \end{enumerate}
+
+  \s{13}
+
+  \item
+    \begin{eqnarray*}
+      S\left(n, m\right) & = & \sum^m_{k=0} \left(-1\right)^k \binom{m}{k} \left(m - k\right)^n \\
+      S\left(8, 6\right) & = & \sum^6_{k=0} \left(-1\right)^k \binom{6}{k} \left(6 - k\right)^8 \\
+                         & = & 191520\\
+    \end{eqnarray*}
+
+  \s{16}
+
+  \item
+    \begin{eqnarray*}
+      S\left(n, m\right)  & = & \sum^m_{k=0} \left(-1\right)^k \binom{m}{k} \left(m - k\right)^n \\
+      S\left(12, 6\right) & = & \sum^6_{k=0} \left(-1\right)^k \binom{6}{k} \left(m - k\right)^{12}\\
+                          & = & 953029440 \\
+    \end{eqnarray*}
+
+  \s{20}
+
+  \item
+    \begin{eqnarray*}
+      \binom{7}{4} d_4 & = & \binom{7}{4} \sum_{k=0}^4 \left(-1\right)^k \binom{4}{k} \left(4 - k\right)!\\
+                       & = & 315 \\
+    \end{eqnarray*}
+
+  \s{24}
+
+  \item
+    \begin{eqnarray*}
+      \phi\left(1625190883965792\right) & = & 1625190883965792 \frac{1}{2} \frac{2}{3} \frac{10}{11} \frac{12}{13} \frac{22}{23} \frac{180}{181} \\
+                                        & = & 432431285299200 \\
+    \end{eqnarray*}
+\end{enumerate}
+\end{document}
